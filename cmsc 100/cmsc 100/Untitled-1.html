@@ -1,0 +1,371 @@
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title> Exer 2 HTML CSS</title>
+            <style>
+                
+                body {
+                font-family: 'Roboto', sans-serif;
+                background-color: #0B6477;
+                margin: 0;
+                padding: 0;
+                color: #333333;
+                gap: 30px;
+                overflow-x: hidden;
+            }
+
+                .body {
+                    display: flex;
+                    align-items: center;
+                    justify-content:space-between;
+                    background-color: #14919B;
+                    padding: 20px 40px; 
+                }
+
+                .body .pic {
+                    border-radius: 50%;
+                    width: 80px;
+                    height: 80px;
+                    cursor: pointer;
+                    border: 2px solid #FFFFFF;
+                }
+
+                .Design_w_text_head {
+                    margin: 0 15px;
+                    padding: 5px 80px 5px 80px;
+                    border-radius: 30px;
+                    background-color: #45DFB1;
+                    color: #213A57;
+                    text-align: center;
+                    cursor: pointer;
+                    transition: background-color 0.3s ease, transform 0.2s ease;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                }
+
+                .Design_w_text_head:hover {
+                    background-color: #80ED99;
+                    transform: translateY(-3px);
+                }
+
+
+                .title, .Design_w_text {
+                    margin: 25px 0 20px;
+                    padding: 15px 30px ;
+                    border-radius: 30px;
+                    background-color: #14919B; 
+                    color: #FFFFFF; 
+                    text-align: center;
+                    font-size: 24px;
+                    font-weight: bold; 
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); 
+                    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+                }
+                .Design_w_text:hover, .title:hover {
+                    background-color: #0AD1C8; 
+                    transform: translateY(-5px) scale(1.02); 
+                    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25); 
+                }
+
+                .featured_me {
+                    width: 80%;
+                    max-width: 600px;
+                    border-radius: 20px;
+                    margin: 20px 0;
+                    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+                    gap: 10px;
+                    transition: transform 0.3s ease;
+                }
+                .featured_me:hover{
+                    transform: translateY(-10px);
+                }
+
+                .proj_container {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 40px; 
+                    justify-content: center; 
+                    margin: 40px 0;
+                }
+
+                .Projects {
+                    width: 300px;
+                    background-color: #FFFFFF;
+                    border-radius: 20px;
+                    overflow: hidden;
+                    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+                    transition: transform 0.3s ease;
+                }
+
+                .Projects:hover {
+                    transform: translateY(-10px);
+                }
+
+                .Projects img {
+                    width: 100%;
+                    height: 200px;
+                    object-fit: cover;
+                }
+
+                .Projects .Title {
+                    padding: 15px;
+                    font-size: 20px;
+                    font-weight: bold;
+                    color: #14919B;
+                }
+
+                .Projects .Description {
+                    padding: 0 15px 20px;
+                    font-size: 16px;
+                    color: #555555;
+                    text-align: justify;
+                }
+
+
+                .container {
+                    display: flex;
+                    justify-content: center; 
+                    align-items: flex-start; 
+                    gap: 40px; 
+                    margin: 60px 0;
+                }
+
+                .combined-section, .combined-section2 {
+                    background-color: #FFFFFF;
+                    padding: 30px;
+                    border-radius: 20px;
+                    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+                    width: 45%;
+                    padding-top: 0;
+                }
+
+                .details {
+                    display: grid; 
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 20px;
+                    margin-top: 20px;
+                }
+
+                .skill-item {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                }
+
+                .skill-item img {
+                    width: 100px;
+                    height: 100px;
+                    object-fit: cover;
+                    border-radius: 50%;
+                    margin-bottom: 10px;
+                    border: 3px solid #45DFB1;
+                    transition: transform 0.3s ease;
+                }
+                .skill-item img:hover{
+                    padding: 10px;
+                    transform: translateY(-10px) scale(1.1);
+                    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+                }
+                .skill-item h3 {
+                    font-size: 18px;
+                    color: #213A57;
+                    margin: 0;
+                }
+
+
+                .details2 {
+                    margin-top: 20px;
+                    line-height: 1.6;
+                    color: #555555;
+                    text-align: justify;
+                }
+
+
+                .container2 {
+                    display: flex;
+                    justify-content: space-around; 
+                    align-items: center; 
+                    background-color: #213A57;
+                    padding: 40px 20px;
+                    color: #FFFFFF;
+                    flex-wrap: wrap;
+                }
+
+                .container2 .picture {
+                    border-radius: 50%;
+                    width: 80px;
+                    height: 80px;
+                    border: 2px solid #0AD1C8;
+                }
+
+                .container2 p {
+                    margin: 10px 0px;
+                }
+
+                .Justin {
+                    color: #0AD1C8;
+                    text-decoration: none;
+                    cursor: pointer;
+                }
+
+                .Justin:hover {
+                    text-decoration: underline;
+                }
+
+                .gradient {
+                    border: none;
+                    height: 3px; 
+                    background: linear-gradient(to right, #213A57, #0B6477, #14919B, #0AD1C8, #45DFB1, #80ED99);
+                    margin: 20px 0; 
+                    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); 
+                }
+                .back_on_top {
+                    display: inline-block; 
+                    padding: 10px 20px; 
+                    border-radius: 5px;
+                    background-color: #14919B; 
+                    color: #FFFFFF; 
+                    text-align: center; 
+                    text-decoration: none; 
+                    font-size: 16px; 
+                    font-weight: bold; 
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+                    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+                    }
+
+                .back_on_top:hover {
+                    background-color: #0AD1C8; 
+                    transform: translateY(-3px); 
+                    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+                }
+
+                .back_on_top:active {
+                background-color: #0A8F9D; 
+                transform: translateY(-1px); 
+                }
+            </style>
+        <body>
+            <div class="body">
+                
+                <div class="logo_section">
+                    <img class="pic" src="panda.jpg" > 
+                </div>
+                    <div class="Design_w_text_head">
+                    <h2 class="text2">Featured</h2>
+                    </div>
+                    <div class="Design_w_text_head">
+                    <h2 class="text2">Projects</h2>
+                    </div>
+                    <div class="Design_w_text_head">
+                        <h2 class="text2">Skills</h2>
+                    </div>
+                    <div class="Design_w_text_head">
+                        <h2 class="text2">Autobiography</h2>
+                        </div>
+                    <div class="Design_w_text_head">
+                        <h2 class="text2">Foot</h2>
+                        </div>
+            </div> 
+
+                <hr class="gradient">
+
+            <div class = "text">
+                <div class="Design_w_text">
+                    <h2 class="text2">Featured Pics</h2>
+                    </div>
+                <div class="container">
+                <img class="featured_me" src="me.jpg" alt="si Justin">
+                <img class="featured_me" src="me2.jpg" alt="si Justin">
+                <img class="featured_me" src="me3.jpg" alt="si Justin">
+            </div>
+                <div class="Design_w_text">
+                    <h2 class="text2">Previous Projects</h2>
+                    </div>
+
+            <div class="proj_container">
+                <div class="Projects">
+                    <img class="c12" src="cmsc_12.PNG" alt="">
+                    <div class="Title">CMSC 12</div>
+                    <div class="Description">A challenging cinema project from my first year in CMSC</div>
+                </div>
+                <div class="Projects">
+                    <img class="c22" src="cmsc_22.jpg" alt="">
+                    <div class="Title">CMSC 22</div>
+                    <div class="Description">Frontend Developer era, we created our own game. The background took several days to complete</div>
+                </div>
+                <div class="Projects">
+                    <img class="c23" src="cmsc_23.png" alt="">
+                    <div class="Title">CMSC 23</div>
+                    <div class="Description">This was from last semester, creating a Slambook, which was quite challenging.</div>
+                </div>
+                <div class="Projects">
+                    <img class="html" src="html.PNG" alt="">
+                    <div class="Title">HTML/CSS</div>
+                    <div class="Description">This was from my early days at university when I was experimenting with small projects, creating something similar to Facebook.</div>
+                    </div>
+                </div>    
+            <div class="container">
+                <div class="combined-section">              
+                    <div>
+                        <h2 class="title">Skills</h2>
+                        <div class="details">
+                            <div class="skill-item">
+                                <img class="skills" src="confidence.jpg" alt="">
+                                <h3 class="">Confidence</h3>
+                            </div>
+                            <div class="skill-item">
+                                <img class="skills" src="creative (2).jpg" alt="">
+                                <h3 class="">Creativeness</h3>
+                            </div>
+                            <div class="skill-item">
+                                <img class="skills" src="critical thinker.jpg" alt="">
+                                <h3 class="">Critical Thinker</h3>
+                            </div>
+                            <div class="skill-item">
+                                <img class="skills" src="Pure empathy.jpg" alt="">
+                                <h3 class="">Pure Empathy</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                    <div class="combined-section2">
+                        <h2 class="title">Autobiography</h2>
+                        <div class="details2">
+                            <p class="Auto">My name is Justin Andrei R. Ibanez, and I was born on May 25, 2003, in Calamba, Laguna. From a young age, I had a natural curiosity and eagerness to learn, especially when it came to computers and mathematics.</p>
+                                <p></p>
+                            <p class="Auto">During my childhood, I spent much of my time playing with toys and video games, a passion that remains with me to this day.</p>
+                                <p></p>  
+                            <p class="Auto">In my early school years, I attended Trace College, where I felt comfortable, partly because of the air conditioning, and also because I had the opportunity to learn languages like Chinese and Spanish. However, due to financial constraints, my parents could no longer afford the tuition, and I had to transfer to Los Baños Elementary School, a public school. The transition was difficult, and I found myself crying because I didn't know anyone, and the lack of air conditioning was uncomfortable to what I was used to.</p>
+                                <p></p>   
+                            <p class="Auto">The cultural shift was overwhelming, especially since I was placed in a pilot section, which presented its own challenges. My 3rd and 4th grades were tough, and I didn't make it to the honor roll. However, in 5th grade, I worked hard and managed to secure 10th place in my section, out of over 300 students. This achievement allowed me to return to Trace College, where I was able to prove my capabilities and earn a scholarship.</p>
+                                <p></p>   
+                            <p class="Auto">During my high school years at Trace College, I fully focused on academics and consistently made it to the honor roll, excelling particularly in math and computer science.</p> 
+                                <p></p>
+                            <p class="Auto">After graduating with a STEM track, I am eying on the University of the Philippines (UP), with applying the mindset "UP or nothing". To my great efforts, I was accepted into my dream course at my dream school.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+            <hr class="gradient">
+            <div class="container2">
+                <img class="picture" src="panda.jpg" > 
+                <div>
+                    
+                    <p class="Auto">Follow me on Facebook: <a href="https://www.facebook.com/justinthegreight" class="Justin">Justin</a></p>
+                    <a href="#top" class="back_on_top">Back on top of the page</a>
+                </div>
+                <div>
+                    <p class="Auto">Visit us at Pedro R. Sandoval Ave, Los Baños, 4031 Laguna</p>
+                    <p class="Auto">Contact us: 09871234684</p>
+                </div>
+                <div>
+                    <p class="Auto">©2024 ICS UPLB</p>
+                </div>
+            </div>
+
+            </div> 
+               
+        </body>
+        </head>
+    </html>
