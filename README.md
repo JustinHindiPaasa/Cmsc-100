@@ -9,7 +9,7 @@ Git clone & modify your remote repository
 Create an index.html file
 Convert the website to public repository
 Remote GitHub Repository Settings
-Make a link https://cmsc100-laboratory.github.io/02-my-github-page-[GitHub Username]/
+Make a link https:// cmsc100- laboratory. github.io/02-my-github-page-[GitHub Username]/
 Set to public
 Key takeaways from this exercise:
 Take patience on doing this project
