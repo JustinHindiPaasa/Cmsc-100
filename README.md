@@ -2,7 +2,7 @@
 Exer 2, CMSC 100 (HTML/CSS)
 Name: Justin Andrei R. Ibanez
 Degree Program: BS Computer Science
-Website link: https://cmsc100-laboratory.github.io/02-my-github-page-JustinHindiPaasa/ (Error 404)
+Website link: (Error 404)
 Steps on how to create Github page:
 Accept the github classroom
 Git clone & modify your remote repository
